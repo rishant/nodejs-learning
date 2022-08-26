@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T14:44:51.564Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="XUz-66EnkUJQYLT8U2g5" version="20.2.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-26T14:48:48.803Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="RJmEdPHbOLYdsvq3gJP-" version="20.2.6" type="github">
   <diagram id="DWUqB2PM9tQu7tQXnMEF" name="Page-1">
     <mxGraphModel dx="1888" dy="1647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -69,10 +69,10 @@
           <mxGeometry x="127" y="520" width="297.58" height="160" as="geometry" />
         </mxCell>
         <mxCell id="Bg5k5mws3xVHbePD2vZb-21" value="Client-Size&amp;nbsp;" style="text;html=1;fillColor=#b1ddf0;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=3;fontSize=18;labelBorderColor=none;strokeColor=#10739e;gradientColor=none;" vertex="1" parent="1">
-          <mxGeometry x="-140" y="-100" width="620" height="30" as="geometry" />
+          <mxGeometry x="-140" y="-120" width="620" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Bg5k5mws3xVHbePD2vZb-22" value="Access Points" style="text;html=1;strokeColor=#10739e;fillColor=#b1ddf0;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=3;fontSize=18;labelBorderColor=none;" vertex="1" parent="1">
-          <mxGeometry x="510" y="-100" width="560" height="30" as="geometry" />
+          <mxGeometry x="510" y="-120" width="560" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Bg5k5mws3xVHbePD2vZb-33" style="edgeStyle=orthogonalEdgeStyle;curved=1;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;fontColor=#000000;exitX=0;exitY=0.454;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.01;entryY=0.388;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="Bg5k5mws3xVHbePD2vZb-31" target="Bg5k5mws3xVHbePD2vZb-7">
           <mxGeometry relative="1" as="geometry">
@@ -120,13 +120,13 @@
           <mxGeometry x="1275" y="-19.99999999999997" width="104" height="116" as="geometry" />
         </mxCell>
         <mxCell id="Bg5k5mws3xVHbePD2vZb-43" value="Application Deployment&amp;nbsp;" style="text;html=1;strokeColor=#10739e;fillColor=#b1ddf0;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=3;fontSize=18;labelBorderColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1120" y="-100" width="440" height="30" as="geometry" />
+          <mxGeometry x="1120" y="-120" width="440" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Bg5k5mws3xVHbePD2vZb-44" value="Application&lt;br&gt;Server - 02" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;strokeColor=#ffffff;fillColor=#232F3E;dashed=0;verticalLabelPosition=middle;verticalAlign=bottom;align=center;html=1;whiteSpace=wrap;fontSize=10;fontStyle=1;spacing=3;shape=mxgraph.aws4.productIcon;prIcon=mxgraph.aws4.ec2;rounded=0;labelBackgroundColor=none;labelBorderColor=none;" vertex="1" parent="1">
           <mxGeometry x="1410" y="231.6" width="70" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="Bg5k5mws3xVHbePD2vZb-45" value="Data Storage (CAP &amp;amp; PACELC Theorem)" style="text;html=1;strokeColor=#10739e;fillColor=#b1ddf0;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=3;fontSize=18;labelBorderColor=none;" vertex="1" parent="1">
-          <mxGeometry x="1590" y="-100" width="420" height="30" as="geometry" />
+        <mxCell id="Bg5k5mws3xVHbePD2vZb-45" value="Data Storage (CAP &amp;amp; PACELC Theorem)&lt;br&gt;OLTP (Online Transaction Processing)" style="text;html=1;strokeColor=#10739e;fillColor=#b1ddf0;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=3;fontSize=18;labelBorderColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1590" y="-120" width="420" height="50" as="geometry" />
         </mxCell>
         <mxCell id="Bg5k5mws3xVHbePD2vZb-46" value="&lt;b&gt;Object Store&lt;/b&gt;" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.bucket_with_objects;fillColor=#000000;gradientColor=none;rounded=0;labelBackgroundColor=none;labelBorderColor=none;fontSize=12;fontColor=#000000;fillStyle=solid;" vertex="1" parent="1">
           <mxGeometry x="1940" y="-29.53" width="60" height="61.5" as="geometry" />
