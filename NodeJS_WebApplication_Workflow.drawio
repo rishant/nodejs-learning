@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-08-26T14:48:48.803Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="RJmEdPHbOLYdsvq3gJP-" version="20.2.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-08-26T14:49:29.925Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/104.0.0.0 Safari/537.36" etag="FpMNr2i6Oo1dGXwcM2oI" version="20.2.6" type="github">
   <diagram id="DWUqB2PM9tQu7tQXnMEF" name="Page-1">
     <mxGraphModel dx="1888" dy="1647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -157,6 +157,9 @@
         </mxCell>
         <mxCell id="Bg5k5mws3xVHbePD2vZb-82" value="Active Directory&lt;br&gt;Store" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.azure_active_directory;rounded=0;labelBackgroundColor=none;labelBorderColor=none;fillStyle=solid;fontSize=12;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="1751" y="317.1" width="69" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="Bg5k5mws3xVHbePD2vZb-83" value="User" style="points=[[0.35,0,0],[0.98,0.51,0],[1,0.71,0],[0.67,1,0],[0,0.795,0],[0,0.65,0]];verticalLabelPosition=bottom;sketch=0;html=1;verticalAlign=top;aspect=fixed;align=center;pointerEvents=1;shape=mxgraph.cisco19.user;fillColor=#005073;strokeColor=none;rounded=0;labelBackgroundColor=none;labelBorderColor=none;fillStyle=solid;fontSize=12;fontColor=#000000;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-450" y="162.7" width="80" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
