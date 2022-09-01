@@ -13,7 +13,7 @@ class Layout extends Component {
         <LeftPanel></LeftPanel>
         <BodyContentSection></BodyContentSection>
         <RightPanel></RightPanel>
-        <Footer></Footer>
+        <Footer footerValue="© 2022 Rishant Gupta, LLC. All rights reserved."></Footer>
       </div>
     )
   }

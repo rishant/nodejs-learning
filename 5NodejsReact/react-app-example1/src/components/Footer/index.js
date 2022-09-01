@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Footer() {
+function Footer(props) {
+  const [footerValue, setFooterValue] = useState("");
   return (
-    <div>Footer</div>
+    <div>{props.footerValue ? props.footerValue : footerValue}</div>
   )
 }
 
-export default Footer
+export default Footer;
