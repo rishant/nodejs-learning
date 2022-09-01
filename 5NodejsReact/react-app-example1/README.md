@@ -50,6 +50,9 @@ Your app is ready to be deployed!
 >  -->  src\index.js (render App component into root div)\
 >  ---> src\App.js ( Props, State, component events load/change/destroy, JSX template )
 
+# Extension/Plugin: [React Component Code Snippets generater]
+    - ES7+ React/Redux/React-Native snippets
+
 # Functional components
 # class based components
 # Propes
