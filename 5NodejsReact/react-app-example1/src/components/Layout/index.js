@@ -9,11 +9,11 @@ class Layout extends Component {
   render() {
     return (
       <div>
-        <Header></Header>
-        <LeftPanel></LeftPanel>
-        <BodyContentSection></BodyContentSection>
-        <RightPanel></RightPanel>
-        <Footer footerValue="© 2022 Rishant Gupta, LLC. All rights reserved."></Footer>
+        <Header />
+        <LeftPanel />
+        <BodyContentSection />
+        <RightPanel />
+        <Footer footerValue="© 2022 Rishant Gupta, LLC. All rights reserved." />
       </div>
     )
   }
