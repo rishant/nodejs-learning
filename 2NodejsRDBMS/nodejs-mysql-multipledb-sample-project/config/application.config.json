@@ -1,0 +1,28 @@
+{
+    "application": {
+        "port": 3535
+    },
+    "databases" : {
+        "itemdb" : {
+            "user": "root",
+            "password": "root",
+            "host": "localhost",
+            "port": "3306",
+            "database": "itemdb"
+        },
+        "tutorialdb" : {
+            "user": "root",
+            "password": "root",
+            "host": "localhost",
+            "port": "3306",
+            "database": "tutorialdb"
+        },
+        "my_shop" : {
+            "user": "root",
+            "password": "root",
+            "host": "localhost",
+            "port": "3306",
+            "database": "my_shop"
+        }
+    }
+}
