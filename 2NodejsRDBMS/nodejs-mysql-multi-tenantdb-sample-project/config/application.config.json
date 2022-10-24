@@ -1,0 +1,28 @@
+{
+    "application": {
+        "port": "3505"
+    },
+    "tenants": {
+        "tenantA": {
+            "user": "root",
+            "password": "root",
+            "host": "localhost",
+            "port": "3306",
+            "database": "teamA"
+        },
+        "tenantB": {
+            "user": "root",
+            "password": "root",
+            "host": "localhost",
+            "port": "3306",
+            "database": "teamB"
+        },
+        "tenantC": {
+            "user": "root",
+            "password": "root",
+            "host": "localhost",
+            "port": "3306",
+            "database": "teamC"
+        }
+    }
+}
