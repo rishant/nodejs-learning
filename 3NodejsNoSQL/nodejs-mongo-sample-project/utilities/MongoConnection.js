@@ -1,6 +1,8 @@
+const config = require('../config/config.json');
+
 const mongoose = require('mongoose');
 
-const dbURI =  process.env.APP_MONGO_URI || 'mongodb://localhost:27017/mongooseDB';
+const dbURI =  process.env.APP_MONGO_URI || config.application.dbUri || 'mongodb://localhost:27017/mongooseDB';
 
 mongoose.connect(dbURI, { 
     useNewUrlParser: true, 
