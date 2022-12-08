@@ -77,6 +77,8 @@ Solutions:
 
 - Tutorial Video Reference:
     [![SC2 Video](https://img.youtube.com/vi/xCzm1bbOpfw/0.jpg)](https://www.youtube.com/watch?v=xCzm1bbOpfw)
+    
+    [![SC2 Video](https://img.youtube.com/vi/xUQ-hNRHCgs/0.jpg)](https://www.youtube.com/watch?v=xUQ-hNRHCgs)
 
 - JavaScript Learning & CommonJS Vs ES-Modules Import/Export and require/module.exports differences:
   
