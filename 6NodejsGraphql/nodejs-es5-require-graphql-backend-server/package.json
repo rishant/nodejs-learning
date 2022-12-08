@@ -2,10 +2,11 @@
   "name": "nodejs-graphql-backend-server-2",
   "version": "1.0.0",
   "description": "GraphQL underlying architecture is REST -> POST request with Query|Mutation|Subscription",
-  "main": "server.js",
+  "main": "server3.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server3.js"
+    "start": "node server3.js",
+    "start:nodemon": "nodemon server3.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,8 @@
     "@apollo/server": "^4.2.2",
     "express": "^4.18.2",
     "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
   }
 }

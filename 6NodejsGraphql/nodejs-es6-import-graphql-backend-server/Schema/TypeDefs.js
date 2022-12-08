@@ -1,5 +1,5 @@
 const typeDefs = `#graphql
-  # type
+
   type Book {
     title: String
     author: String
@@ -15,12 +15,15 @@ const typeDefs = `#graphql
   # clients can execute, along with the return type for each. In this
   # case, the "books" query returns an array of zero or more Books (defined above).
   type Query {
-    books: [Book]
-    users: [User]
+    getAllBooks: [Book]
+    getAllUsers: [User]
   }
 
   # Mutations
-
+  type Mutation {
+  	createBook(title: String!, author: String!): Book!
+    createUser(name: String!, age: Int!, married: Boolean!): User!
+  }
 `;
 
 export { typeDefs };
