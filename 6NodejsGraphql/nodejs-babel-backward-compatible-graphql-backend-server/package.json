@@ -1,0 +1,29 @@
+{
+  "name": "nodejs-babel-backward-compatible-graphql-backend-server",
+  "version": "1.0.0",
+  "description": "GraphQL underlying architecture is REST -> POST request with Query|Mutation|Subscription",
+  "main": "server3.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server3.js",
+    "start:nodemon": "nodemon server3.js",
+    "start:babel-node": "babel-node server3.js",
+    "start:nodemon-babel-node": "nodemon --exec babel-node server3.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.2.2",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "mongoose": "^6.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.20.5",
+    "@babel/node": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "nodemon": "^2.0.20"
+  }
+}
