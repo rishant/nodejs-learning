@@ -4,6 +4,17 @@ const { startStandaloneServer } = require('@apollo/server/standalone');
 const { typeDefs } = require('./Schema/TypeDefs')
 const { resolvers } = require('./Schema/Resolvers')
 
+const mongoose = require('mongoose');
+
+async function createMongoDBConnection() {
+  await mongoose.connect('mongodb://localhost:27017/myapp', {
+    useUnifiedTopology: true,
+    useNewUrlParser: true
+  })
+  console.log('Mongoose connected...')
+}
+createMongoDBConnection();
+
 async function startServer() {
   const server = new ApolloServer({
     typeDefs,

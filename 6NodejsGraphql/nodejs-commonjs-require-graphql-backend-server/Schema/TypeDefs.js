@@ -15,8 +15,10 @@ const typeDefs = `#graphql
   # clients can execute, along with the return type for each. In this
   # case, the "books" query returns an array of zero or more Books (defined above).
   type Query {
-    getAllBooks: [Book]
-    getAllUsers: [User]
+    getAllBooksFack: [Book]
+    getAllBooksDB: [Book]
+    getAllUsersFacK: [User]
+    getAllUsersDB: [User]
   }
 
   # Mutations
