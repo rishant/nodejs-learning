@@ -24,8 +24,6 @@ cmd:/> npm install express mongoose graphql apollo-server apollo-server-express
 ``` 
 # nodemon for on-change reload automatically.
 cmd:/> npm install --save-dev nodemon
-cmd:/> add this script in package.json --> "start:nodemon": "nodemon server3.js"
-cmd:/> npm run start:nodemon
 ```
 
 - Create Custom Scripts in package.json.
