@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+
+  # docker run -v sample_project_prod_volume:/app --env PORT=5000 ./.env -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
+  sample_project_env_run_container: 
+    image: sample-nodejs-project:latest
+    container_name: sample_project_env_run_container
+    ports:
+      - 3000:5000
+    volumes:
+      - sample_project_prod_volume:/app
+    environment:
+      - PORT=5000
+    command: npm run start:prod
+
+  # docker run -v sample_project_prod_volume:/app --env-file ./.env -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
+  sample_project_env_file_run_container: 
+    image: sample-nodejs-project:latest
+    container_name: sample_project_env_file_run_container
+    ports:
+      - 3000:5000
+    volumes:
+      - sample_project_prod_volume:/app
+    env_file:
+      - ./.env
+    command: npm run start:prod
+
+volumes:
+  sample_project_prod_volume:

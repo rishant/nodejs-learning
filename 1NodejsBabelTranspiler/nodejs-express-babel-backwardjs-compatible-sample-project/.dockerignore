@@ -2,5 +2,8 @@ node_modules
 package-lock.json
 .gitignore
 .dockerignore
-Dockerfile
+dockerfile
+docker-compose.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
 README.md

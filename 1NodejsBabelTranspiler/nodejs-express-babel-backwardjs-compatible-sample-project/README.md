@@ -40,6 +40,8 @@
     cmd:/> docker build --pull --rm -f "dockerfile" -t sample-nodejs-project:latest "." 
     cmd:/> docker run -p 3000:3000 -d --name nodejs-babel-container sample-nodejs-project:latest
     cmd:/> docker exec -it nodejs-babel-container bash
+    | or | --> direct deploy bash to verify docker container file structure.
+    cmd:/> docker run --rm -it -p 3000:3000 -d --name nodejs-babel-container sample-nodejs-project:latest bash
 
 # 10. Run docker image with volume mappping
     - Linux:
@@ -86,8 +88,12 @@
     -- Issue: Rebuild image if any changes in "dockerfile" and image is already exist in docker-engine locally.
 
     cmd:> docker compose  -f "docker-compose.yml" up -d --build sample_project_build_run_container
-    
+
     -- Solution: Use "--build" attribute for rebuild image using docker-compose build and create/run Container.
+
+# 13. docker-compose for different deployment environments:
+    1. docker-compose.dev.yml
+    2. docker-compose.prod.yml
 
 - Tutorial Video Reference:
     [![SC2 Video](https://img.youtube.com/vi/9zUHg7xjIqQ/0.jpg)](https://www.youtube.com/watch?v=9zUHg7xjIqQ)
