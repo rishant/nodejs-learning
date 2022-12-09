@@ -77,5 +77,7 @@
 
     cmd:/> docker run -v %cd%:/app --env PORT=5000 -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
 
+    cmd:/> docker run -v %cd%:/app --env-file ./.env -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
+
 - Tutorial Video Reference:
     [![SC2 Video](https://img.youtube.com/vi/9zUHg7xjIqQ/0.jpg)](https://www.youtube.com/watch?v=9zUHg7xjIqQ)
