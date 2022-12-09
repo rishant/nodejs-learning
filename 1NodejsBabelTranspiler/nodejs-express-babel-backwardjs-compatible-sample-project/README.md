@@ -95,5 +95,17 @@
     1. docker-compose.dev.yml
     2. docker-compose.prod.yml
 
-- Tutorial Video Reference:
-    [![SC2 Video](https://img.youtube.com/vi/9zUHg7xjIqQ/0.jpg)](https://www.youtube.com/watch?v=9zUHg7xjIqQ)
+# Source code example reference:
+	https://github.com/Sanjeev-Thiyagarajan/node-docker
+
+# 14. Image creation using build-arguments in docker-compose || docker-build command:
+    https://tecadmin.net/use-logical-or-and-in-shell-script/
+	
+
+# MEARN Stack end-to-end Tutorial Video Reference:
+
+[![SC2 Video](https://img.youtube.com/vi/9zUHg7xjIqQ/0.jpg)](https://www.youtube.com/watch?v=9zUHg7xjIqQ)
+
+# Linux scripting conditions:
+
+[![SC2 Video](https://img.youtube.com/vi/qZcT4VfF5lM/0.jpg)](https://www.youtube.com/watch?v=qZcT4VfF5lM)
