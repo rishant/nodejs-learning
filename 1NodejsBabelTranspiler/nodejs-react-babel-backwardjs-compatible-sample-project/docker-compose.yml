@@ -1,0 +1,39 @@
+version: '3.9'
+
+services:
+
+  # docker build --pull --rm -f "Dockerfile.dev" -t sample-react-app:latest "."
+  # docker run -p 3000:3000 -d --name nginx_react_webapp_build_dev sample-react-app:latest
+  nginx_react_webapp_build_dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    image: sample-react-app:latest
+    container_name: nginx_react_webapp_build_dev
+    ports:
+      # - host-port:container-port
+      - 3000:3000
+    # command: ["npm", "start"]
+
+  # docker build --pull --rm -f "Dockerfile" -t sample-react-app:latest "."
+  # docker run -p 3000:80 -d --name nginx_react_webapp_build_prod sample-react-app:latest
+  nginx_react_webapp_build_prod:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sample-react-app:latest
+    container_name: nginx_react_webapp_build_prod
+    ports:
+      # - host-port:container-port
+      - 3000:80
+
+  # docker run -p 3000:3000 -d --name nginx_react_webapp_run sample-react-app:latest
+  # docker run -p 3000:80 -d --name nginx_react_webapp_run sample-react-app:latest
+  nginx_react_webapp_run:
+    image: sample-react-app:latest
+    container_name: nginx_react_webapp_run
+    ports:
+      # - host-port:container-port
+      - 3000:3000
+      - 3000:80
+    
