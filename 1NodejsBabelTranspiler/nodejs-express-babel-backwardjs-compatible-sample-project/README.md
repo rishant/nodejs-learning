@@ -31,3 +31,8 @@
     cmd:> npm run start:dev
     cmd:> npm run start:babel-node
     cmd:> npm run start:nodemon-babel-node
+
+# 8. Added Docker support.
+    1. Created dockerfile for build image.
+    2. added .dockerignore file for skip file/folder in container image.
+    cmd:> docker build --pull --rm -f "dockerfile" -t sample-nodejs-project:latest "." 
