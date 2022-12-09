@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:prod": "babel-node index.js",
+    "start:dev": "babel-node index.js",
+    "start:prod": "node index.js",
     "start:debug": "nodemon -L --exec babel-node index.js"
   },
   "keywords": [],

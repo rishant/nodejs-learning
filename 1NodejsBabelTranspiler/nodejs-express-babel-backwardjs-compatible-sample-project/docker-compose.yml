@@ -3,32 +3,48 @@ version: '3.9'
 services:
   
   # docker build --pull --rm -f "dockerfile" -t sample-nodejs-project:latest "."
-  # docker run --env PORT=5000 -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
+  # docker run -v %cd%:/app -v /app/node_modules --env NODE_ENV=local --env PORT=5000 -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
   sample_project_build_run_container: 
     build:
       context: .
       dockerfile: dockerfile
     image: sample-nodejs-project:latest
     container_name: sample_project_build_run_container
+    volumes:
+      - ./:/app
+      - /app/node_modules
     ports:
       - 3000:5000
     environment:
+      - NODE_ENV=local
       - PORT=5000
+    command: npm run start:debug
 
-  # docker run --env PORT=5000 -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
+  # docker run -v %cd%:/app -v /app/node_modules --env NODE_ENV=local --env PORT=5000 -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
   sample_project_build_env_run_container: 
     image: sample-nodejs-project:latest
     container_name: sample_project_build_env_run_container
+    volumes:
+      - ./:/app
+      - /app/node_modules
     ports:
       - 3000:5000
     environment:
+      - NODE_ENV=local
       - PORT=5000
+    command: npm run start:debug
 
-  # docker run --env-file ./.env -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
+  # docker run -v %cd%:/app -v /app/node_modules --env NODE_ENV=local --env-file ./.env -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
   sample_project_env_file_run_container: 
     image: sample-nodejs-project:latest
     container_name: sample_project_env_file_run_container
+    volumes:
+      - ./:/app
+      - /app/node_modules
     ports:
       - 3000:5000
+    environment:
+      - NODE_ENV=local
     env_file:
       - ./.env
+    command: npm run start:debug
