@@ -75,9 +75,19 @@
 	cmd:/> docker run -v %cd%:/app -v /app/node_modules -p 3000:3000 -d --name nodejs-babel-container sample-nodejs-project:latest
     -- Solution: above docker-run will treat /app/node_modules as separate-volume which will not impact on -v %cd%:/app
 
+# 11. Pass Environments Variables in 2 ways:
+    -- By --env 
     cmd:/> docker run -v %cd%:/app --env PORT=5000 -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
 
+    -- By --env-file
     cmd:/> docker run -v %cd%:/app --env-file ./.env -p 3000:5000 -d --name nodejs-babel-container sample-nodejs-project:latest
+
+# 12. docker-compose.yml file for easy deployment:
+    -- Issue: Rebuild image if any changes in "dockerfile" and image is already exist in docker-engine locally.
+
+    cmd:> docker compose  -f "docker-compose.yml" up -d --build sample_project_build_run_container
+    
+    -- Solution: Use "--build" attribute for rebuild image using docker-compose build and create/run Container.
 
 - Tutorial Video Reference:
     [![SC2 Video](https://img.youtube.com/vi/9zUHg7xjIqQ/0.jpg)](https://www.youtube.com/watch?v=9zUHg7xjIqQ)
