@@ -1,0 +1,9 @@
+FROM node:16
+WORKDIR /app
+# below line is the relative path for /app as .
+COPY package.json .
+RUN npm install
+# below line is the relative path for first "." is the current project path AND second "./" is the container WORKDIR path.
+COPY . ./
+EXPOSE 3000
+CMD [ "npm", "run", "start:nodemon-babel-node" ]
