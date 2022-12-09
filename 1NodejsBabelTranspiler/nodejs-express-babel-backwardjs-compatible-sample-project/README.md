@@ -35,4 +35,45 @@
 # 8. Added Docker support.
     1. Created dockerfile for build image.
     2. added .dockerignore file for skip file/folder in container image.
-    cmd:> docker build --pull --rm -f "dockerfile" -t sample-nodejs-project:latest "." 
+
+# 9. Build, Run and container-execute-bash docker image
+    cmd:/> docker build --pull --rm -f "dockerfile" -t sample-nodejs-project:latest "." 
+    cmd:/> docker run -p 3000:3000 -d --name nodejs-babel-container sample-nodejs-project:latest
+    cmd:/> docker exec -it nodejs-babel-container bash
+
+# 10. Run docker image with volume mappping
+    - Linux:
+        terminal:$> sudo docker run -v $(pwd):/app -p 3000:3000 -d --name nodejs-babel-container sample-nodejs-project:latest
+    - windows:
+	    cmd:/> docker run -v %cd%:/app -p 3000:3000 -d --name nodejs-babel-container sample-nodejs-project:latest
+    -- Issue with docker container volume mapping is not reloaded to file changes, So we have to follow below package.json update.
+    
+    -- package.json
+    {
+        "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1",
+            "start": "node index.js",
+            "start:dev": "nodemon --exec node index.js",
+            "start:babel-node": "babel-node index.js",
+            "start:nodemon-babel-node": "nodemon --exec babel-node index.js"
+        }
+    }
+
+    -- Change to below
+    {
+        "scripts": {
+            "test": "echo \"Error: no test specified\" && exit 1",
+            "start": "node index.js",
+            "start:dev": "nodemon -L --exec node index.js",
+            "start:babel-node": "babel-node index.js",
+            "start:nodemon-babel-node": "nodemon -L --exec babel-node index.js"
+        }
+    }
+
+    -- Issue: if we delete node_modules folder from our local then docker container volume mapping is not able to find that folder so thatw we have to create diffent volume mount for node_modules in docker-run.
+
+	cmd:/> docker run -v %cd%:/app -v /app/node_modules -p 3000:3000 -d --name nodejs-babel-container sample-nodejs-project:latest
+    -- Solution: above docker-run will treat /app/node_modules as separate-volume which will not impact on -v %cd%:/app
+
+- Tutorial Video Reference:
+    [![SC2 Video](https://img.youtube.com/vi/9zUHg7xjIqQ/0.jpg)](https://www.youtube.com/watch?v=9zUHg7xjIqQ)
