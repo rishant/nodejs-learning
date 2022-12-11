@@ -1,5 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import "./AppClassComponent.css";
 import React from 'react';
 
 class AppClassComponent extends React.Component {
@@ -26,9 +26,9 @@ class AppClassComponent extends React.Component {
   render() {
     console.log("-----------updateDataOnClick Class Component----------");
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <div className="AppCC">
+        <header className="AppCC-header">
+          <img src={logo} className="AppCC-logo" alt="logo" />
           <h1 style={{ color: "red" }}>Hello Style!</h1>
           <p>Class state data: {this.state.data}</p>
           <p>Class Update Count: {this.state.count}</p>
