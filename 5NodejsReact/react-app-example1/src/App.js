@@ -1,16 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
-import Layout from './components/Layout';
 
 function App(props) {
-  // Behind the seens.
-  // React.createElement('div', { className: "App" }, "JSX in react", React.createElement('h2', { className: "App-header"}, "The Indian Dev"))
-  console.log("App Component ", props);
   
   return (
-    <div className="App">
-      <Layout></Layout>
-    </div>
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 style={{ color: "red" }}>Hello Style!</h1>
+          <p>Hello World</p>
+        </header>
+      </div>
   );
 }
 
