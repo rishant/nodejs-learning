@@ -10,14 +10,14 @@ class Student extends React.Component {
     }
 
     render() { 
-        const {name, email} = this.props;
+        const {name, email, color} = this.props;
         return (
-            <>
+            <div style={{"background-color": color }}>
                 {/* <h3>Name: {this.props.name} </h3>
                 <h3>Email: {this.props.email} </h3> */}
                 <h3>CC Name: {name} </h3>
                 <h3>CC Email: {email} </h3>
-            </>
+            </div>
         );
     }
 }

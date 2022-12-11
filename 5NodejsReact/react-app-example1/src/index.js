@@ -20,8 +20,16 @@ root.render(
       <tr>
         <td style={{border: '1px solid black'}}><App /></td>
         <td style={{border: '1px solid black'}}><AppClassComponent /></td>
-        <td style={{border: '1px solid black'}}><StudentFC name="test1" email="test1@react.practices.com"/></td>
-        <td style={{border: '1px solid black'}}><StudentCC name="test2" email="test2@react.practices.com"/></td>
+        <td style={{border: '1px solid black'}}>
+          <StudentFC name="test1" email="test1@react.practices.com" color="aliceblue" />
+          <StudentFC name="test12" email="test13@react.practices.com" color="antiquewhite"/>
+          <StudentFC name="test13" email="test13@react.practices.com" color="darkgray"/>
+        </td>
+        <td style={{border: '1px solid black'}}>
+          <StudentCC name="test2" email="test2@react.practices.com" color="red" />
+          <StudentCC name="test22" email="test22@react.practices.com" color="yellow"/>
+          <StudentCC name="test23" email="test23@react.practices.com" color="green"/>
+        </td>
       </tr>
     </table>
   </React.StrictMode>
