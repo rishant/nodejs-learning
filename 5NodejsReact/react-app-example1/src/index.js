@@ -2,12 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import AppClassComponent from './AppClassComponent';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <table>
+      <tr>
+        <th>Functional Component</th>
+        <th>Class Component</th>
+      </tr>
+      <tr>
+        <td><App /></td>
+        <td><AppClassComponent /></td>    
+      </tr>
+    </table>
   </React.StrictMode>
 );
 
