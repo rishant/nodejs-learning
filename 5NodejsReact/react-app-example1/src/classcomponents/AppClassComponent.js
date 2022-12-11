@@ -33,8 +33,8 @@ class AppClassComponent extends React.Component {
           <p>Class state data: {this.state.data}</p>
           <p>Class Update Count: {this.state.count}</p>
           <span>
-            <input type="text" id='input_name_2' name="input_name_2" style={{ margin: "5px"}}/>
-            <button onClick={() => {this.updateDataOnClick2()}}>Click me !</button>
+            <input type="text" id='input_name_2' name="input_name_2" style={{ margin: "5px"}} onChange={() => {this.updateDataOnClick2()}} />
+            {/* <button onClick={() => {this.updateDataOnClick2()}}>Click me !</button> */}
           </span>
         </header>
       </div>

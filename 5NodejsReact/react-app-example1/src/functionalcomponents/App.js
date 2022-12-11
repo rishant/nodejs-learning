@@ -29,8 +29,8 @@ function App(props) {
           <p>Function state data: {data}</p>
           <p>Function update Count: {count}</p>
           <span>
-            <input type="text" id='input_name_1' name="input_name_1" style={{ margin: "5px"}}/>
-            <button onClick={() => {updateDataOnClick1()}}>Click me !</button>
+            <input type="text" id='input_name_1' name="input_name_1" style={{ margin: "5px"}} onChange={() => {updateDataOnClick1()}} />
+            {/* <button onClick={() => {updateDataOnClick1()}}>Click me !</button> */}
           </span>
         </header>
       </div>
