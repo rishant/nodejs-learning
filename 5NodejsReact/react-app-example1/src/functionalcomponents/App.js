@@ -23,7 +23,7 @@ function App(props) {
     setCount(count+1);
   }
 
-  console.log("-----------updateDataOnClick function component----------");
+  // console.log("-----------updateDataOnClick function component----------");
   
   return (
       <div className="App">

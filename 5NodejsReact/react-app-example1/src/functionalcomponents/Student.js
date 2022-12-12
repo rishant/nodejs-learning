@@ -3,7 +3,7 @@ function Student(props) {
     const {name, email, color} = props;
 
     return (
-        <div style={{"background-color": color }}>
+        <div style={{backgroundColor: color }}>
             <h3>FC Name: {name} </h3>
             <h3>FC Email: {email} </h3>
         </div>
