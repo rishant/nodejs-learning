@@ -3,7 +3,6 @@
 | - | - | - |
 | [![SC2 Video](https://img.youtube.com/vi/f2EqECiTBL8/0.jpg)](https://www.youtube.com/watch?v=f2EqECiTBL8) | [![SC2 Video](https://img.youtube.com/vi/eHpetRB8qTw/0.jpg)](https://www.youtube.com/watch?v=eHpetRB8qTw&list=PL_euSNU_eLbdf5XbrFl-nOw6-7ZtT27Bn&index=1) | [![SC2 Video](https://img.youtube.com/vi/2e2E5cvLw0g/0.jpg)](https://www.youtube.com/watch?v=2e2E5cvLw0g&list=PL8p2I9GklV456iofeMKReMTvWLr7Ki9At&index=29) |
 
-
 ### Sample github project using create-react-app:
 > https://github.com/Sanjeev-Thiyagarajan/node-docker \
 > https://github.com/Sanjeev-Thiyagarajan/docker-node-practice
@@ -120,9 +119,3 @@ Find out more about deployment here:
 
 # React + Python REST-API Communication: 
 [![SC2 Video](https://img.youtube.com/vi/e63EBEFJkH0/0.jpg)](https://www.youtube.com/watch?v=e63EBEFJkH0)
-
-
-# NodeJS Learning:
-||||
-| - | - | - |
-| [![SC2 Video](https://img.youtube.com/vi/f2EqECiTBL8/0.jpg)](https://www.youtube.com/watch?v=f2EqECiTBL8) | [![SC2 Video](https://img.youtube.com/vi/eHpetRB8qTw/0.jpg)](https://www.youtube.com/watch?v=eHpetRB8qTw&list=PL_euSNU_eLbdf5XbrFl-nOw6-7ZtT27Bn&index=1) | [![SC2 Video](https://img.youtube.com/vi/2e2E5cvLw0g/0.jpg)](https://www.youtube.com/watch?v=2e2E5cvLw0g&list=PL8p2I9GklV456iofeMKReMTvWLr7Ki9At&index=29) |
