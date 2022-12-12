@@ -1,5 +1,39 @@
-# we need to  uninstall create-react-app globally.
+# We need to  uninstall create-react-app globally.
 > npm uninstall -g create-react-app
+
+```
+Note that the development build is not optimized.
+To create a production build, use ***npm run build***.
+
+The project was built assuming it is hosted at /.
+You can control this with the homepage field in your package.json.
+
+The build folder is ready to be deployed.
+You may serve it with a static server:
+
+  npm install -g serve
+  serve -s build
+
+Find out more about deployment here:
+
+  https://cra.link/deployment
+```
+# React production build deployment on Nginx Server.
+
+**Nginx Setup on Windows**
+
+    copy nginx*.zip into some directory and add that path into system variables.
+    Goto that path and Run below command's for Start/Stop server.
+
+**Start Server**
+
+    cmd:/> nginx.exe
+
+**Stop Server**
+
+    cmd:/> nginx.exe -s quit
+    | or |
+    cmd:/> wmic process where name='nginx.exe' delete
 
 
 | React-App basic working: | |
